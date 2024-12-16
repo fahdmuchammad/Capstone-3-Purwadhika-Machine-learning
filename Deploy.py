@@ -1,11 +1,11 @@
-import streamlit as st
-import pandas as pd
-import seaborn as sns
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classification_report, roc_curve, auc
-import joblib
-import plotly.graph_objects as go
+import streamlit as st  # type: ignore
+import pandas as pd  # type: ignore
+import seaborn as sns  # type: ignore
+import numpy as np  # type: ignore
+import matplotlib.pyplot as plt  # type: ignore
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classification_report, roc_curve, auc  # type: ignore
+import joblib # type: ignore
+import plotly.graph_objects as go  # type: ignore
 # Load Model
 model = joblib.load("best_model_telco_logreg.pkl")
 
